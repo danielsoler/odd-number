@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>odd numbers</title>
+</head>
+<body>
+
+</body>
+<script>
+	var num1 = prompt("escriba un numero")
+	console.log(num1)
+	num1 = num1.replace(/\s/g,'');
+
+	if(num1 % 2 === 0 && num1 != '') {
+		document.write(num1 + " es par");
+	}else if(isNaN(num1 % 2)) {
+		document.write(num1 + " no es un número");
+	}else if(num1 === '') {
+		document.write("por favor escriba un número");
+	}else {
+		document.write(num1 + " no es par");
+	}
+</script>
+</html>
